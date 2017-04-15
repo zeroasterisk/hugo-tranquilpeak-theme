@@ -10,7 +10,7 @@
   var ShareOptionsBar = function() {
     this.$shareOptionsBar = $('#share-options-bar');
     this.$openBtn = $('.btn-open-shareoptions');
-    this.$closeBtn = $('#share-options-mask');
+    this.$closeBtn = $('#btn-close-shareoptions');
   };
 
   ShareOptionsBar.prototype = {
@@ -52,7 +52,7 @@
         !this.$shareOptionsBar.hasClass('processing')) {
         // Open the share option bar
         self.$shareOptionsBar.addClass('processing opened');
-
+        self.$body.css('overflow', 'hidden');
         setTimeout(function() {
           self.$shareOptionsBar.removeClass('processing');
         }, 250);
@@ -71,12 +71,11 @@
       if (self.$shareOptionsBar.hasClass('opened') &&
         !this.$shareOptionsBar.hasClass('processing')) {
         // Close the share option bar
-        self.$shareOptionsBar
-          .addClass('processing')
-          .removeClass('opened');
+        self.$shareOptionsBar.addClass('processing').removeClass('opened');
 
         setTimeout(function() {
           self.$shareOptionsBar.removeClass('processing');
+          self.$body.css('overflow', '');
         }, 250);
       }
     }

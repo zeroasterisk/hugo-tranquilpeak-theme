@@ -39,7 +39,7 @@
   translation: "Facebook"
 
 - id: "global.google_plus"
-  translation: "Google Plus"
+  translation: "Google+"
 
 - id: "global.linkedin"
   translation: "LinkedIn"
@@ -51,7 +51,7 @@
   translation: "RSS"
 
 - id: "global.share_on_google_plus"
-  translation: "Compartir en Google Plus"
+  translation: "Compartir en Google+"
 
 - id: "global.share_on_facebook"
   translation: "Compartir en Facebook"

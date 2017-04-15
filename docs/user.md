@@ -502,11 +502,13 @@ showDate: true
 |coverCaption|Add a caption under the cover image : [Cover caption demo](https://tranquilpeak.kakawait.com/2015/05/cover-image-showcase/)|
 |coverMeta|`in`: display post meta (title, date and categories) on cover image, `out`: display meta (title, date and categories) under cover image as usual. Default behavior : `in`|
 |gallery|Images displayed in an image gallery (with fancybox) at the end of the post. If thumbnail image is not configured and cover image too, the first photo is used as thumbnail image. format: `original url [thumbnail url] [caption]`, E.g : `https://example.com/original.jpg https://example.com/thumbnail.jpg "New York"`|
-|comments|Disable the comment of the post.
+|comments|`true`: Show the comment of the post.|
 |showDate|`true`: Show the date when `true` (default)|
-|showTags|`true`: show tags of this page. Default behavior: `true`
-|showPagination|`true`: show pagination.  Default behavior: `true`
-|showSocial|`true`: show social button such as share on Twitter, Facebook...  Default behavior: `true`
+|showTags|`true`: show tags of this page.|
+|showPagination|`true`: show pagination.|
+|showSocial|`true`: show social button such as share on Twitter, Facebook...|
+|showMeta|`true`: Show post meta (date, categories).|
+|showActions|`true`: Show post actions (navigation, share links).|
 
 Example: 
 A post on index page will look like this with :`thumbnailImagePosition` set to `bottom`:  
@@ -696,10 +698,8 @@ tags:
 keywords:
 - tech
 comments:       false
-showDate:       false
-showSocial:     false
-showTags:       false
-showPagination: false
+showMeta:       false
+showActions:    false
 #thumbnailImage: //example.com/image.jpg
 ---
 
