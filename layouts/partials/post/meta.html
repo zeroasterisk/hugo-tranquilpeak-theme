@@ -1,8 +1,9 @@
 <div class="postShorten-meta post-meta">
   {{ if not (eq .Params.showDate false)  }}
     <time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-      {{ partial "internal/date.html" . }}
+      {{ .Date.Format "2006-01-02" }}
     </time>
   {{ end }}
+  <i class="fa fa-chevron-right"></i>
   {{ partial "post/category.html" . }}
 </div>
